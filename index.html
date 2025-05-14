@@ -11,7 +11,7 @@
     <header role="banner">
         <h1>DOM Lesson</h1>
     </header>
-    <main id="main">
+    <main id="main" class="container">
         <h1 id="myName">My name here</h1>
         <p>Three things I like about me!</p>
         <ul id="myList">
@@ -20,8 +20,18 @@
             <li class="my-items" id="item3"></li>
         </ul>
 
+        <section class="row text-center">
+            <div class="col-6 leftBox">
+                <h3>Left Box</h3>
+            </div>
+            <div class="col-6 rightBox">
+                <h3>Right Box</h3>
+            </div>
+        </section>
+
     </main>
     <button id="here">Click Me</button>
+    <input type="text" name="text" id="num">
 
     <script src="./js/app.js"></script>
 </body>

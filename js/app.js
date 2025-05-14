@@ -86,3 +86,42 @@ function colorList() {
         reList[i].style.color = "purple";
     }
 }
+
+
+// ClassName (Bootstrap)
+let leftSide = document.querySelector(".leftBox");
+console.log(leftSide);
+
+// Removing a class name
+leftSide.classList.remove("leftBox");
+console.log(leftSide);
+leftSide.classList.add("newBackground");
+
+
+// Text from an input box
+let textBox = document.getElementById("num");
+
+// Grabs the value of a text box (IMMEDIATELY ONLOAD)
+console.log(textBox.value);
+
+// How to get an attribute from an element
+console.log(textBox.getAttribute("type"));
+
+
+leftSide.addEventListener("click", () => {
+    // Re-views and grabs the latest changes to it
+    textBox = document.getElementById("num");
+    console.log(textBox.value);
+
+    leftSide.innerText = textBox.value;
+});
+
+
+
+
+// Removing Elements
+let rightSide = document.querySelector(".rightBox");
+console.log(rightSide);
+
+// BELOW Removing an element from the HTML DOC (use this with an eventlistener or it wont come back when you refresh)
+// rightSide.remove();
